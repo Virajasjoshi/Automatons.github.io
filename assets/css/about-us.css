@@ -1,0 +1,73 @@
+body,
+html {
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+.bg-about-us {
+  height: 400px;
+  width: 100%;
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+    url("./../img/About/steeltoe-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-onrow {
+  margin-top: -80px;
+}
+
+.onImageText {
+  font-family: "Pacifico", cursive;
+  color: white;
+}
+
+.vmcards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.card-img {
+}
+
+/*Mobile CSS Below*/
+@media only screen and (max-width: 480px) {
+  .onImageText {
+    font-size: 35px;
+  }
+  .card-img {
+    width: 125px;
+    margin: auto;
+    border: none;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .row > p.NormalText{
+    padding: 16px;
+  }
+}
+
+/*Desktop CSS Below*/
+@media only screen and (min-width: 480px) {
+  .onImageText {
+    font-size: 75px;
+  }
+  .NormalText {
+    padding: 30px;
+  }
+  .card-img {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    border: none;
+  }
+}
